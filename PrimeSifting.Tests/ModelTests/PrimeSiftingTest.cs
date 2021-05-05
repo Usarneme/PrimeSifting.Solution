@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System;
 
 namespace PrimeSifting.Test
 {
@@ -45,7 +46,7 @@ namespace PrimeSifting.Test
       int userInput = 14;
 
       List<int> primeNumbersListResult = SieveOfEratosthenes.ReturnAllPrimesUpTo(userInput);
-
+      // primeNumbersListResult.ForEach(i => Console.Write("{0}, ", i));
       CollectionAssert.AreEqual(primeNumbersListExpected, primeNumbersListResult);
     }
   }
