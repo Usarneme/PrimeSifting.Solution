@@ -36,5 +36,17 @@ namespace PrimeSifting.Test
 
       CollectionAssert.AreEqual(primeNumbersListExpected, primeNumbersListResult);
     }
+
+    [TestMethod]
+
+    public void ReturnAllPrimesUpTo_Fourteen_ListContainingPrimes()
+    {
+      List<int> primeNumbersListExpected = new List<int>{2, 3, 5, 7, 11, 13};
+      int userInput = 14;
+
+      List<int> primeNumbersListResult = SieveOfEratosthenes.ReturnAllPrimesUpTo(userInput);
+
+      CollectionAssert.AreEqual(primeNumbersListExpected, primeNumbersListResult);
+    }
   }
 }
