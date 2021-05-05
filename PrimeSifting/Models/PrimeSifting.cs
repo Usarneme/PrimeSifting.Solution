@@ -6,7 +6,12 @@ namespace PrimeSifting
     {
       public static List<int> ReturnAllPrimesUpTo(int maxNumber)
       {
-        return new List<int>{};
+        List<int> primes = new List<int>{};
+        if (maxNumber > 2)
+        {
+          // our loop in here that starts at 2
+        }
+        return primes;
       }
     }
 }
