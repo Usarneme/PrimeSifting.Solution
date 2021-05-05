@@ -49,5 +49,17 @@ namespace PrimeSifting.Test
       // primeNumbersListResult.ForEach(i => Console.Write("{0}, ", i));
       CollectionAssert.AreEqual(primeNumbersListExpected, primeNumbersListResult);
     }
+
+    [TestMethod]
+
+    public void ReturnAllPrimesUpTo_Thirty_ListContainingPrimes()
+    {
+      List<int> primeNumbersListExpected = new List<int>{2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
+      int userInput = 30;
+
+      List<int> primeNumbersListResult = SieveOfEratosthenes.ReturnAllPrimesUpTo(userInput);
+      // primeNumbersListResult.ForEach(i => Console.Write("{0}, ", i));
+      CollectionAssert.AreEqual(primeNumbersListExpected, primeNumbersListResult);
+    }
   }
 }
